@@ -1,21 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Costa Rica</title>
 </head>
 <body>
-    <h1>Hola soy Ana 🐦‍</h1>
-    <p>Me gusta el anime, tengo un perro que se llama Milaneso <br> y mi fruta favorita es el mango.</p>
-    <ul>
-        <li>Estudie Ingenieria en Computación</li>
-        <li>Cumplo años en Agosto</li>
-        <li>Soy hija unica</li>
-        <li>Me gustaria viajar a Costa Rica</li>
-    </ul>  
+    <header>
+        <h1>País: Costa Rica</h1>
+        <img src="images/san-jose.jpg" alt="Imagen de paisajes de Costa Rica">
+        <nav>
+            <ul>
+                <li><a href="#historia">Historia de Costa Rica</a></li>
+                <li><a href="#lugares">Lugares para visitar</a></li>
+                <li><a href="#comida">Comida típica</a></li>
+                <li><a href="#florafauna">Flora y Fauna</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h2>Hola</h2>
-    <script src="main.js"></script>
+    <main>
+        <section id="historia">
+            <h2>Historia de Costa Rica</h2>
+            <p>Costa Rica, oficialmente República de Costa Rica, es un Estado soberano organizado como una república presidencialista unitaria compuesta por 7 provincias. <br> Ubicado en Centroamérica, posee un territorio con un área total de 51 179 km². Limita con Nicaragua al norte, el mar Caribe al este, Panamá al sureste y el océano Pacífico al oeste. <br> En cuanto a los bordes marítimos, colinda con Nicaragua, Colombia, Panamá y Ecuador.7​8​ Cuenta con 5 226 362 habitantes.9​ Su capital, centro político y económico es San José, y su idioma oficial es el español.10​ Su punto más austral es la Isla del Coco.</p>
+        </section>
+
+        <section id="lugares">
+            <h2>Lugares para visitar:</h2>
+            <ul>
+                <li>La Fortuna</li>
+                <li>Volcán Poás</li>
+                <li>El Arenal</li>
+                <li>Puerto Viejo, Tico</li> 
+            </ul>
+        </section>
+
+        <section id="comida">
+            <h2>Comida típica</h2>
+            <p>La gastronomía costarricense es conocida por su variedad y sabor. Algunos platillos típicos incluyen:</p>
+            <ul>
+                <li>Gallo pinto (arroz y frijoles)</li>
+                <li>Casado (plato con carne, arroz, frijoles, plátano maduro y ensalada)</li>
+                <li>Olla de carne (sopa de res con verduras)</li>
+                <li>Chifrijo (plato con chicharrón, frijoles, arroz y pico de gallo)</li>
+            </ul>
+        </section>
+
+        <section id="florafauna">
+            <h2>Flora y Fauna</h2>
+            <p>Costa Rica es un país con una rica biodiversidad. Alberga una gran variedad de especies de plantas y animales, incluyendo:</p>
+            <ul>
+                <li>Monos</li>
+                <li>Perezosos</li>
+                <li>Tucanes</li>
+                <li>Orquídeas</li>
+                <li>Heliconias</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <form action="#" method="post"> 
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Encuentra más información en:</h3>
+        <a href="https://es.wikipedia.org/wiki/Costa_Rica" target="_blank">Wikipedia</a>
+    </footer>
 </body>
 </html>
