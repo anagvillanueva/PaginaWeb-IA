@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
+<!--En head se almacenan metadatos para poder renderizar mi pagina web-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Costa Rica</title>
 </head>
 <body>
+    <!--Header es una etiqueta semantica que indica que es una cabecera-->
     <header>
-        <h1>País: Costa Rica</h1>
-        <img src="images/san-jose.jpg" alt="Imagen de paisajes de Costa Rica">
-        <nav>
-            <ul>
-                <li><a href="#historia">Historia de Costa Rica</a></li>
-                <li><a href="#lugares">Lugares para visitar</a></li>
-                <li><a href="#comida">Comida típica</a></li>
-                <li><a href="#florafauna">Flora y Fauna</a></li>
-            </ul>
-        </nav>
+        <div style="text-align: center;">
+            <h1 style="color:red"> País: Costa Rica</h1>
+            <img src="images/san-jose.jpg" alt="Imagen de paisajes de Costa Rica" height="350px">
+            <!--Barra de navegación-->
+            <nav>
+                <ul>
+                    <!--Enlaces internos-->
+                    <li><a href="#historia">Historia de Costa Rica</a></li>
+                    <li><a href="#lugares">Lugares para visitar</a></li>
+                    <li><a href="#comida">Comida típica</a></li>
+                    <li><a href="#florafauna">Flora y Fauna</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section id="historia">
             <h2>Historia de Costa Rica</h2>
-            <p>Costa Rica, oficialmente República de Costa Rica, es un Estado soberano organizado como una república presidencialista unitaria compuesta por 7 provincias. <br> Ubicado en Centroamérica, posee un territorio con un área total de 51 179 km². Limita con Nicaragua al norte, el mar Caribe al este, Panamá al sureste y el océano Pacífico al oeste. <br> En cuanto a los bordes marítimos, colinda con Nicaragua, Colombia, Panamá y Ecuador.7​8​ Cuenta con 5 226 362 habitantes.9​ Su capital, centro político y económico es San José, y su idioma oficial es el español.10​ Su punto más austral es la Isla del Coco.</p>
+            <p style="font-size: 18px; color:brown;"> Costa Rica, oficialmente <b>República de Costa Rica</b>, es un Estado soberano organizado como una república presidencialista unitaria compuesta por <strong> 7 provincias. </strong> <br> Ubicado en Centroamérica, posee un territorio con un área total de 51 179 km². Limita con Nicaragua al norte, el <span style="color:blue">mar Caribe</span> al este, Panamá al sureste y el océano Pacífico al oeste. <br> En cuanto a los bordes marítimos, colinda con Nicaragua, Colombia, Panamá y Ecuador.7​8​ Cuenta con 5 226 362 habitantes.9​ Su capital, centro político y económico es San José, y su idioma oficial es el español.10​ Su punto más austral es la Isla del Coco.</p>
         </section>
 
+        <!-- <b> y <strong> ponen en negritas, pero una es semantica y la otra no -->
+
         <section id="lugares">
-            <h2>Lugares para visitar:</h2>
+            <h2><i>Lugares</i> para visitar:</h2>
             <ul>
                 <li>La Fortuna</li>
                 <li>Volcán Poás</li>
@@ -36,15 +44,16 @@
         </section>
 
         <section id="comida">
-            <h2>Comida típica</h2>
+            <h2>Comida <em>típica</em></h2> <!-- <i> y <em> ponen en italica-->
             <p>La gastronomía costarricense es conocida por su variedad y sabor. Algunos platillos típicos incluyen:</p>
             <ul>
-                <li>Gallo pinto (arroz y frijoles)</li>
-                <li>Casado (plato con carne, arroz, frijoles, plátano maduro y ensalada)</li>
-                <li>Olla de carne (sopa de res con verduras)</li>
-                <li>Chifrijo (plato con chicharrón, frijoles, arroz y pico de gallo)</li>
+                <li><u>Gallo pinto</u> (arroz y frijoles)</li>
+                <li><u>Casado</u> (plato con carne, arroz, frijoles, plátano maduro y ensalada)</li>
+                <li><u>Olla de carne</u> (sopa de res con verduras)</li>
+                <li><u>Chifrijo</u> (plato con chicharrón, frijoles, arroz y pico de gallo)</li>
             </ul>
         </section>
+        <!--Subrayamos con <u>-->
 
         <section id="florafauna">
             <h2>Flora y Fauna</h2>
